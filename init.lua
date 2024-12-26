@@ -91,6 +91,12 @@ vim.g.mapleader = ' '
 vim.g.maplocalleader = ' '
 
 vim.opt.shell = 'pwsh'
+vim.opt.shellcmdflag =
+  '-NoLogo -NoProfile -ExecutionPolicy RemoteSigned -Command [Console]::InputEncoding=[Console]::OutputEncoding=[System.Text.Encoding]::UTF8;'
+vim.opt.shellredir = '2>&1 | Out-File -Encoding UTF8 %s; exit $LastExitCode'
+vim.opt.shellpipe = '2>&1 | Out-File -Encoding UTF8 %s; exit $LastExitCode'
+vim.opt.shellquote = ''
+vim.opt.shellxquote = ''
 
 -- Set to true if you have a Nerd Font installed and selected in the terminal
 vim.g.have_nerd_font = true
