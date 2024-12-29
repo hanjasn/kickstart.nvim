@@ -3,7 +3,7 @@ return {
   lazy = false,
   priority = 1000,
   keys = {
-    { '<leader>tt', '<Cmd>MonokaiToggleLight<CR>', desc = 'Monokai-Nightasty: Toggle dark/light theme.' },
+    ---{ '<leader>tt', '<Cmd>MonokaiToggleLight<CR>', desc = 'Monokai-Nightasty: Toggle dark/light theme.' },
   },
   ---@module "monokai-nightasty"
   ---@type monokai.UserConfig
